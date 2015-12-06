@@ -12,6 +12,15 @@ app.set('view engine', 'ejs');
 app.get('/', function(request, response) {
   response.render('pages/index');
 });
+app.get('/login', function(request, response) {
+	response.render('pages/login');
+});
+app.get('/about', function(request, response) {
+	response.render('pages/about');
+});
+app.get('/faq', function(request, response) {
+	response.render('pages/faq');
+});
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
