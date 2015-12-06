@@ -27,5 +27,13 @@
   margin:20px;
 }
 
+.white-link {
+  color:#fff;
+}
+
+.white-link:hover {
+  color:#ddd;
+}
+
 
 

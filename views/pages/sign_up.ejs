@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+  <% include ../partials/nav.ejs %>
+
+<div class="container my-buffer">
+    <form class="form-signin login-form">
+      <h2 class="form-signin-heading">Please Create an Account</h2>
+      <div class = "form-group">
+        <label for = "first_name">First Name</label>
+        <input type = "text" class = "form-control" id = "first_name" placeholder = "First Name">
+      </div>
+      <div class = "form-group">
+        <label for = "last_name">First Name</label>
+        <input type = "text" class = "form-control" id = "last_name" placeholder = "Last Name">
+      </div>
+      <div class = "form-group">
+        <label for = "email">Email Address</label>
+        <input type = "email" class = "form-control" id = "email" placeholder = "Enter Email Address">
+      </div>
+      <div class = "form-group">
+          <label for = "password1">Choose a Password</label>
+          <input type = "password" class = "form-control" id = "password1" placeholder = "Enter a Password">
+      </div>
+      <div class = "form-group">
+          <label for = "password2">Retype Password</label>
+          <input type = "password" class = "form-control" id = "password2" placeholder = "Enter Password">
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+    </form>
+    <div class="alert alert-info" role="alert">
+      Already have an account? <a class="alert-link" href="/login">Sign in here</a>
+    </div>
+</div>
+
+
+
+  <% include ../partials/footer.ejs %>
+
+
+</body>
+</html>

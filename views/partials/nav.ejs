@@ -4,14 +4,18 @@
       <li>
         <a href="/">Home</a>
       </li>
-      <li>
-        <a href="/login">Become a Host</a>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Where do you want to eat? <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/nashville">Nashville</a></li>
+            <li><a href="/new_york">New York</a></li>
+          </ul>
       </li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> How It Works <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="/faq">Frequently Asked Questions</a></li>
-            <li><a href="/about">Who We Are</a></li>
+            <li><a href="/about">About Us</a></li>
           </ul>
       </li>
     </ul>
@@ -20,5 +24,6 @@
         <a href="/login">Login</a>
       </li>
     </ul>
+    <button type="button" onclick="location.href = '/sign_up';" class="navbar-right btn btn-default navbar-btn">Sign up</button>
   </div>
 </nav>

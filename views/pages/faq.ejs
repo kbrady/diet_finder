@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+  <% include ../partials/nav.ejs %>
+
+<div class="my-buffer">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+          How do I create an account?</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body">Go to the sign up page <a href="/sign_up">here</a>.
+        <p>Enter your name, email and password to 
+        get started.</p>
+        <p>Your account is free whether you wish to become a host or eat as a guest.</p>
+        <p>Welcome to our community.
+        </p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+          Do I need to be a chef to prepare a meal?</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">No, but you do need to enjoy cooking. We believe that delicious home cooked meals are a 
+      universal desire for travelers.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+          How can I be sure the food is halal?</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">We pre screen hosts by asking them to complete a <a>test</a> on what makes food Halal. You can 
+      message any host before your meal to ask them questions about how they prepare their 
+      dishes and what they plan to make when you come.</div>
+      </div>
+    </div>
+  </div>
+  <div class="alert alert-info" role="alert">
+     Have a question you don't see here? <a class="alert-link" href="/contact">Contact Us</a>
+  </div>
+</div>
+
+
+  <% include ../partials/footer.ejs %>
+
+
+</body>
+</html>
